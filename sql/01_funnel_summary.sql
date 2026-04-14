@@ -28,7 +28,7 @@ churned_revenue AS (
     AND a.churn_flag = true
     AND ls.rn = 1
 )
--- Combining funnel and churn metrics to measure churn impact
+-- Combining funnel and churn metrics to measure churn impact, in this data all signups have converted, hence churn_rate calculation is condsidering signups count
 SELECT 
   signups,
   active,
